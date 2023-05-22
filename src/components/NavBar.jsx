@@ -14,7 +14,7 @@ export default function NavBar({ currentTab, navigation }) {
     'flex-auto w-full h-full items-center justify-end rounded-full p-1 '
   const selectedIconColor = colors.amber[400]
   return (
-    <View className="absolute m-auto left-0 right-0 pb-4  bg-cyan-950  bottom-0 border-t-2 ">
+    <View className="absolute max-h-16 m-auto left-0 right-0 pb-4 mt-16  bg-cyan-950  bottom-0 border-t-2 ">
       <View className="flex flex-row justify-evenly items-center  ">
         <TouchableOpacity
           activeOpacity={0.7}
