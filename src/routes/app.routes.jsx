@@ -21,12 +21,12 @@ export function AppRoutes() {
         tabBarActiveTintColor: selectedIconColor,
         headerShown: false,
         tabBarHideOnKeyboard: true,
-        tabBarShowLabel:false,
+        tabBarShowLabel: false,
         tabBarStyle: {
           backgroundColor: backGroundTabColor,
           height: 60,
-          paddingBottom:10,
-          paddingTop:10,
+          paddingBottom: 10,
+          paddingTop: 10
         }
       }}
       backBehavior="history"

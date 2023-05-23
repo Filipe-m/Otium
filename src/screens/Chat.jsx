@@ -16,10 +16,10 @@ export default function Chat({ navigation }) {
 
   const isFocused = useIsFocused()
   useEffect(() => {
-    if(isFocused){
+    if (isFocused) {
       scrollViewRef.current.scrollToEnd({ animated: false })
     }
-}, [isFocused])
+  }, [isFocused])
 
   const [number, onChangeNumber] = React.useState('')
 
