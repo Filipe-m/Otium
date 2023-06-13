@@ -10,7 +10,8 @@ export default function GoalsModal({
   dayCount,
   goal,
   id,
-  forceUpdate
+  forceUpdate,
+  
 }) {
   const [openDialog, setOpenDialog] = useState(false)
 

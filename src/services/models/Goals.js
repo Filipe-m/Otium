@@ -6,13 +6,23 @@ import db from '../database'
  */
 db.transaction(tx => {
   //<<<<<<<<<<<<<<<<<<<<<<<< USE ISSO APENAS DURANTE OS TESTES!!! >>>>>>>>>>>>>>>>>>>>>>>
-  //tx.executeSql("DROP TABLE goals;");
+  tx.executeSql('DROP TABLE goals;')
   //<<<<<<<<<<<<<<<<<<<<<<<< USE ISSO APENAS DURANTE OS TESTES!!! >>>>>>>>>>>>>>>>>>>>>>>
 
   tx.executeSql(
     'CREATE TABLE IF NOT EXISTS goals (id INTEGER PRIMARY KEY AUTOINCREMENT, tittle TEXT, goal INT, createdAt TEXT);'
   )
 })
+
+/**
+ * APAGA TODAS AS LINHAS DA DATABASE!!
+ */
+
+const dropDatabase = () => {
+  db.transaction(tx => {
+    tx.executeSql('DROP TABLE goals;')
+  })
+}
 
 /**
  * CRIAÇÃO DE UM NOVO REGISTRO
@@ -168,5 +178,6 @@ export default {
   find,
   findByName,
   all,
-  remove
+  remove,
+  dropDatabase
 }
