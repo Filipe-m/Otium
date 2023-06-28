@@ -1,15 +1,14 @@
-import React, { useRef, useState, useEffect } from 'react'
+import { FontAwesome } from '@expo/vector-icons'
 import { useIsFocused } from '@react-navigation/native'
 import { StatusBar } from 'expo-status-bar'
+import React, { useEffect, useRef } from 'react'
 import {
-  Text,
-  View,
   ScrollView,
+  Text,
   TextInput,
   TouchableOpacity,
-  Alert
+  View
 } from 'react-native'
-import { FontAwesome } from '@expo/vector-icons'
 
 export default function Chat({ navigation }) {
   const scrollViewRef = useRef()
@@ -70,7 +69,6 @@ export default function Chat({ navigation }) {
           activeOpacity={0.7}
           className="bg-sky-600 p-3 rounded-full"
           onPress={() => {
-            Alert.alert(number)
             onChangeNumber('')
             scrollViewRef.current.scrollToEnd({ animated: false })
           }}

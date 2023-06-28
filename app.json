@@ -1,8 +1,8 @@
 {
   "expo": {
     "name": "Otium",
-    "slug": "Otium",
-    "version": "1.0.0",
+    "slug": "otium",
+    "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -11,9 +11,7 @@
       "resizeMode": "contain",
       "backgroundColor": "##083344"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true
     },
@@ -21,6 +19,12 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "##083344"
+      },
+      "package": "com.filipem.otium"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "be58fa40-fb70-46b0-86ab-06ec17619375"
       }
     }
   }
